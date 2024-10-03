@@ -17,7 +17,7 @@ import image9 from "./9.jpg";
 
 const slides = [image2, image3, image4, image5, image6, image7, image8, image9];
 
-export const Carousel2 = () => {
+export const Carousels2 = () => {
   return (
     <section className="page carousel-2-page">
       <Swiper
@@ -33,8 +33,7 @@ export const Carousel2 = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        modules={[EffectCoverflow]}
-      >
+        modules={[EffectCoverflow]}>
         <div className="swiper-wrapper">
           {slides.map((slide) => (
             <SwiperSlide
@@ -50,3 +49,5 @@ export const Carousel2 = () => {
     </section>
   );
 };
+
+export default Carousels2;
