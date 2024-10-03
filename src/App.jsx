@@ -3,6 +3,7 @@ import DeleteButton from "./components/buttons/DeleteButton/DeleteButton";
 import TrashButton from "./Components/Buttons/TrashButton/TrashButton";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import "./App.css";
+import Carousels2 from "./Components/Carousels1/Carousels2";
 
 const routes = [
   {
@@ -14,6 +15,12 @@ const routes = [
     name: "TrashButton",
     path: "/buttons/trash-button",
     element: <TrashButton />,
+  },
+
+  {
+    name: "Carousels1",
+    path: "/src/Components/Carousels1/Carousels2.jsx",
+    element: <Carousels2 />,
   },
 ];
 
